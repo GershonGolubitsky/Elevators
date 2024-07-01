@@ -31,7 +31,7 @@ class ElevatorService {
     return travelTime; // Return the travel time
   }
 
-  // Find the nearest available elevator
+  // Find the nearest available elevator.
   findNearestElevator(floorNumber: number): Elevator | null {
     let minDistance = Infinity;
     let nearestElevator: Elevator | null = null;
