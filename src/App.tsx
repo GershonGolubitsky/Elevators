@@ -6,7 +6,7 @@ import Building from './components/Building.tsx';
 const App = () => {
   const buildings = [
     { id: 1, numFloors: 30, numElevators: 4 },
-    { id: 2, numFloors: 20, numElevators: 1 },
+    { id: 2, numFloors: 100, numElevators: 1 },
     { id: 3, numFloors: 1, numElevators: 1 },
     { id: 4, numFloors: 6, numElevators: 2 }
   ];

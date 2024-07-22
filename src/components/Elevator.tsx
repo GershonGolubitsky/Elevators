@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import '../styles/main.css';
+import '../styles/styles.css';
 import ding from '../assets/ding.mp3';
 
 const Elevator = ({ elevator }) => {
@@ -7,7 +7,7 @@ const Elevator = ({ elevator }) => {
 
   const elevatorStyle = {
     transform: `translateY(-${position * 117}px)`,
-    transition: `transform ${transitionTime}s ease-in-out`, // Smooth transition
+    transition: `transform ${transitionTime}s ease-in-out`,
   };
 
   useEffect(() => {

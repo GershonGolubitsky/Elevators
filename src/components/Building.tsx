@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import ElevatorService from '../services/ElevatorService.ts';
 import ElevatorComponent from './Elevator.tsx';
 import ElevatorButton from './ElevatorButton.tsx';
-import '../styles/main.css';
+import '../styles/styles.css';
 
 const Building = ({ numFloors, numElevators }) => {
   const [elevatorService] = useState(new ElevatorService(numFloors, numElevators));

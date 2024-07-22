@@ -5,6 +5,7 @@ class Elevator {
   isAvailable: boolean;
   transitionTime: number;
   queue: number[];
+  startTime: number | null; 
 
   constructor(id: number) {
     this.id = id;
@@ -13,11 +14,13 @@ class Elevator {
     this.isAvailable = true;
     this.transitionTime = 0;
     this.queue = [];
+    this.startTime = null;
   }
 
   moveTo(floor: number, travelTime: number) {
     this.position = floor;
     this.transitionTime = travelTime;
+    this.startTime = Date.now(); 
   }
 }
 
